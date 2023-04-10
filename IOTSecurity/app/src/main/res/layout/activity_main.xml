@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#070000"
+            android:gravity="center"
+            android:text="Ứng dụng IOT Tracking Mobile"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lyLight"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbFLight"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingStart="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:text="Đèn Flash"
+            android:textColor="#040000"
+            android:textFontWeight="500"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/twFLightStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Tắt"
+                android:textColor="#040000"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="379dp"
+        android:layout_below="@id/lyLight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"></LinearLayout>
+
+</RelativeLayout>

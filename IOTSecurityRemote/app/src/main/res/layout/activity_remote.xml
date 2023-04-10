@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#070000"
+        android:gravity="center"
+        android:text="Ứng dụng IOT Tracking Mobile - Remote"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lyLight"
+        android:layout_width="match_parent"
+        android:layout_height="686dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/swFLight"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="Tắt bật đèn" />
+
+        <TextView
+            android:id="@+id/twStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái: tắt" />
+
+    </LinearLayout>
+
+</RelativeLayout>
